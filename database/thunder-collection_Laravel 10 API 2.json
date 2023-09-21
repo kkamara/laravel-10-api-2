@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Laravel 10 API 2",
-    "dateExported": "2023-09-21T13:06:45.743Z",
+    "dateExported": "2023-09-21T14:21:46.785Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,7 +14,7 @@
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-09-21T08:14:35.229Z",
-            "modified": "2023-09-21T13:04:38.226Z",
+            "modified": "2023-09-21T14:19:24.256Z",
             "headers": [],
             "params": [
                 {
@@ -49,13 +49,19 @@
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve Invoices",
-            "url": "http://localhost:3000/api/v1/invoices",
+            "url": "http://localhost:3000/api/v1/invoices?status[ne]=P",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-09-21T08:37:12.407Z",
-            "modified": "2023-09-21T08:37:38.932Z",
+            "modified": "2023-09-21T13:27:19.385Z",
             "headers": [],
-            "params": [],
+            "params": [
+                {
+                    "name": "status[ne]",
+                    "value": "P",
+                    "isPath": false
+                }
+            ],
             "tests": []
         },
         {
