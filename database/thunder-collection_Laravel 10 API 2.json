@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Laravel 10 API 2",
-    "dateExported": "2023-09-21T14:21:46.785Z",
+    "dateExported": "2023-09-21T14:34:57.680Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,11 +10,11 @@
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve Customers",
-            "url": "http://localhost:3000/api/v1/customers?postcalCode[gt]=30000&type[eq]=I",
+            "url": "http://localhost:3000/api/v1/customers?postcalCode[gt]=30000&type[eq]=I&includeInvoices=true",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-09-21T08:14:35.229Z",
-            "modified": "2023-09-21T14:19:24.256Z",
+            "modified": "2023-09-21T14:30:32.102Z",
             "headers": [],
             "params": [
                 {
@@ -26,6 +26,11 @@
                     "name": "type[eq]",
                     "value": "I",
                     "isPath": false
+                },
+                {
+                    "name": "includeInvoices",
+                    "value": "true",
+                    "isPath": false
                 }
             ],
             "tests": []
@@ -35,13 +40,19 @@
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve a Customer",
-            "url": "http://localhost:3000/api/v1/customers/1",
+            "url": "http://localhost:3000/api/v1/customers/9?includeInvoices=true",
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-09-21T08:25:33.176Z",
-            "modified": "2023-09-21T08:25:48.771Z",
+            "modified": "2023-09-21T14:34:22.369Z",
             "headers": [],
-            "params": [],
+            "params": [
+                {
+                    "name": "includeInvoices",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
             "tests": []
         },
         {
