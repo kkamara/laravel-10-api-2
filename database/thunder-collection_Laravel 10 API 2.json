@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Laravel 10 API 2",
-    "dateExported": "2023-09-21T08:41:31.831Z",
+    "dateExported": "2023-09-21T13:06:45.743Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,13 +10,24 @@
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve Customers",
-            "url": "http://localhost:3000/api/v1/customers",
+            "url": "http://localhost:3000/api/v1/customers?postcalCode[gt]=30000&type[eq]=I",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-09-21T08:14:35.229Z",
-            "modified": "2023-09-21T08:14:53.544Z",
+            "modified": "2023-09-21T13:04:38.226Z",
             "headers": [],
-            "params": [],
+            "params": [
+                {
+                    "name": "postcalCode[gt]",
+                    "value": "30000",
+                    "isPath": false
+                },
+                {
+                    "name": "type[eq]",
+                    "value": "I",
+                    "isPath": false
+                }
+            ],
             "tests": []
         },
         {
