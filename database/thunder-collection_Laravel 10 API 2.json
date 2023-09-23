@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Laravel 10 API 2",
-    "dateExported": "2023-09-21T14:34:57.680Z",
+    "dateExported": "2023-09-23T14:00:42.756Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,29 +10,56 @@
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve Customers",
-            "url": "http://localhost:3000/api/v1/customers?postcalCode[gt]=30000&type[eq]=I&includeInvoices=true",
+            "url": "http://localhost:3000/api/v1/customers",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-09-21T08:14:35.229Z",
-            "modified": "2023-09-21T14:30:32.102Z",
+            "modified": "2023-09-23T13:48:35.942Z",
             "headers": [],
             "params": [
                 {
                     "name": "postcalCode[gt]",
                     "value": "30000",
+                    "isDisabled": true,
                     "isPath": false
                 },
                 {
                     "name": "type[eq]",
                     "value": "I",
+                    "isDisabled": true,
                     "isPath": false
                 },
                 {
                     "name": "includeInvoices",
                     "value": "true",
+                    "isDisabled": true,
                     "isPath": false
                 }
             ],
+            "tests": []
+        },
+        {
+            "_id": "738bff79-6a60-4587-a9fc-6811125a4fdf",
+            "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
+            "containerId": "",
+            "name": "Create a Customer",
+            "url": "http://localhost:3000/api/v1/customers/",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-09-23T13:49:09.821Z",
+            "modified": "2023-09-23T13:55:00.406Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n       \"name\": \"Thompson Ltd\",\n       \"type\": \"I\",\n       \"email\": \"cooper.bergnaum@steuber.org\",\n       \"address\": \"517 Dorcas Prairie\",\n       \"city\": \"Port Corde\",\n       \"state\": \"test\",\n       \"postalCode\": \"test\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
