@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Laravel 10 API 2",
-    "dateExported": "2023-09-23T14:58:48.879Z",
+    "dateExported": "2023-09-23T15:37:58.328Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -11,10 +11,10 @@
             "containerId": "",
             "name": "Retrieve Customers",
             "url": "http://localhost:3000/api/v1/customers/326",
-            "method": "PUT",
+            "method": "GET",
             "sortNum": 10000,
             "created": "2023-09-21T08:14:35.229Z",
-            "modified": "2023-09-23T14:14:13.218Z",
+            "modified": "2023-09-23T15:35:45.731Z",
             "headers": [],
             "params": [
                 {
@@ -36,6 +36,10 @@
                     "isPath": false
                 }
             ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|ywqoWc74FhZJ2O5K7WZThIK1UDwzyVyVjg1kir7I"
+            },
             "tests": []
         },
         {
