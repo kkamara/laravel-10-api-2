@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Laravel 10 API 2",
-    "dateExported": "2023-09-23T14:00:42.756Z",
+    "dateExported": "2023-09-23T14:22:49.693Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,11 +10,11 @@
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve Customers",
-            "url": "http://localhost:3000/api/v1/customers",
-            "method": "GET",
+            "url": "http://localhost:3000/api/v1/customers/326",
+            "method": "PUT",
             "sortNum": 10000,
             "created": "2023-09-21T08:14:35.229Z",
-            "modified": "2023-09-23T13:48:35.942Z",
+            "modified": "2023-09-23T14:14:13.218Z",
             "headers": [],
             "params": [
                 {
@@ -63,15 +63,63 @@
             "tests": []
         },
         {
+            "_id": "c9d9b4e1-352d-46d5-a81c-840f5d4bac19",
+            "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
+            "containerId": "",
+            "name": "Updating a Customer",
+            "url": "http://localhost:3000/api/v1/customers/326",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-09-23T14:12:50.918Z",
+            "modified": "2023-09-23T14:18:41.867Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n       \"name\": \"Thompson Ltd\",\n       \"type\": \"I\",\n       \"email\": \"coope1r.bergnaum@steuber.org\",\n       \"address\": \"517 Dorcas Prairie\",\n       \"city\": \"Port Corde\",\n       \"state\": \"test\",\n       \"postalCode\": \"test\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "da02cfd1-7dc2-430f-a8df-3967f4b2e1e1",
+            "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
+            "containerId": "",
+            "name": "Patching a Customer",
+            "url": "http://localhost:3000/api/v1/customers/326",
+            "method": "PATCH",
+            "sortNum": 18750,
+            "created": "2023-09-23T14:19:59.341Z",
+            "modified": "2023-09-23T14:20:45.088Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n       \"name\": \"Test Thompson Ltd\",\n       \"type\": \"I\",\n       \"email\": \"coope12r.bergnaum@steuber.org\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
             "_id": "4a9aa28a-516e-4199-a316-e39884dbcef6",
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve a Customer",
-            "url": "http://localhost:3000/api/v1/customers/9?includeInvoices=true",
+            "url": "http://localhost:3000/api/v1/customers/326?includeInvoices=true",
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-09-21T08:25:33.176Z",
-            "modified": "2023-09-21T14:34:22.369Z",
+            "modified": "2023-09-23T14:19:00.048Z",
             "headers": [],
             "params": [
                 {
