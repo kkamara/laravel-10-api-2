@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Laravel 10 API 2",
-    "dateExported": "2023-09-23T14:22:49.693Z",
+    "dateExported": "2023-09-23T14:58:48.879Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -115,11 +115,11 @@
             "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
             "containerId": "",
             "name": "Retrieve a Customer",
-            "url": "http://localhost:3000/api/v1/customers/326?includeInvoices=true",
+            "url": "http://localhost:3000/api/v1/customers/1?includeInvoices=true",
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-09-21T08:25:33.176Z",
-            "modified": "2023-09-23T14:19:00.048Z",
+            "modified": "2023-09-23T14:40:30.141Z",
             "headers": [],
             "params": [
                 {
@@ -128,6 +128,30 @@
                     "isPath": false
                 }
             ],
+            "tests": []
+        },
+        {
+            "_id": "e44d1d05-381a-4f2a-9381-a1ac2d1d1d39",
+            "colId": "a6168d69-1b19-4ca0-84cc-13e793102d99",
+            "containerId": "",
+            "name": "Bulk Insert Invoices",
+            "url": "http://localhost:3000/api/v1/invoices/bulk",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-09-23T14:42:24.830Z",
+            "modified": "2023-09-23T14:57:26.085Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n        \"customerId\": 1,\n        \"amount\": 7481,\n        \"status\": \"B\",\n        \"billedDate\": \"2020-11-14 03:47:20\",\n        \"paidDate\": null\n      },\n      {\n        \"customerId\": 1,\n        \"amount\": 14889,\n        \"status\": \"V\",\n        \"billedDate\": \"2016-08-26 11:10:12\",\n        \"paidDate\": null\n      },\n      {\n        \"customerId\": 1,\n        \"amount\": 15762,\n        \"status\": \"B\",\n        \"billedDate\": \"2015-07-21 11:07:12\",\n        \"paidDate\": null\n      }\n]",
+                "form": []
+            },
             "tests": []
         },
         {
