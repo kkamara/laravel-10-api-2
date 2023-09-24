@@ -17,7 +17,7 @@ class ApiFilter
         "gt" => ">",
         "gte" => ">="
     ];
-        
+    
     public function transform(Request $request): array
     {
         $eloQuery = [];
@@ -29,7 +29,7 @@ class ApiFilter
             if (!isset($query)) {
                 continue;
             }
-
+            // dd($query, $param);
             $column = $this->columnMap[$param] ?? $param;
 
             foreach($operators as $operator) {
